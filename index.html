@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystals Collector Game</title>
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Reset Link -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+</head>
+<body>
+   
+    <div class="container">
+        <!-- <div class="jumbotron"> -->
+        <div class="container" id="main-header">
+            <div class="col-md-10">
+                <h1 class="text-center"><strong>Crystals Collector</strong></h1>
+            </div>
+        </div>  
+        <br>        
+
+        <div class="row">
+            <div class="col-md-2">
+        </div>
+            <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-10" id="steps">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
+        </div>
+        <br>
+
+        <!-- random win and score div -->
+        <div class="container" id="random-win">
+            <div class="row">
+                <div class="col-md-8" id="div-random">
+                <h2 id="random-number"></h2>
+                </div>
+
+                <div class="col-md-4" id="score">
+                    <h4 id="wins">Wins: 0</h4>
+                    <h4 id="losses">Losses: 0</h4>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <br>
+
+        <!-- crystal div -->
+        <div class="row" class="crystal-gem">
+            <div class="col-sm-3">
+                <button type="button" class="btn btn-outline-secondary"><img src="assets/images/crystal blue.jpg" alt="Crystal" class="crystal" id="crystal-blue"></button>
+            </div> 
+            <div class="col-sm-3">
+                <button type="button" class="btn btn-outline-secondary"><img src="assets/images/crystal pink.jpg" alt="Crystal" class="crystal" id="crystal-purple"></button>
+            </div> 
+            <div class="col-sm-3">
+            <button type="button" class="btn btn-outline-secondary"><img src="assets/images/crystal purple.jpg" alt="Crystal" class="crystal" id="crystal-pink"></button>
+            </div>
+            <div class="col-sm-3">
+            <button type="button" class="btn btn-outline-secondary"><img src="assets/images/crystal red.jpg" alt="Crystal" class="crystal" id="crystal-red"></button>
+            </div>
+        </div>
+        <br>
+
+        <!-- score player-count div -->
+        <div class="row">
+            <div class="col-md-12" id="score">
+            <h4>Your total score is:</h4>
+        </div>
+        <br>
+
+        <div class="col-md-12" id="player-count">
+            <h2 id="player-count">0</h2>
+        </div>
+        <br>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container" id="footer-text">
+                <p class=>Copyright &reg; 2019 Razina Ali</p>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+</body>
+</html>
