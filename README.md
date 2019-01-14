@@ -1,5 +1,4 @@
-# unit-4-game
-Crystals Collector Game
+JQuery - Crystals Collector Game
 
 Instuctions
 

@@ -23,9 +23,9 @@ function startGame() {
 	//Random number for crystals
 	blueNum = Math.floor(Math.random() * 12) + 1;
 
-	purpleNum = Math.floor(Math.random() * 12) + 1;
-
 	pinkNum = Math.floor(Math.random() * 12) + 1;
+
+	purpleNum = Math.floor(Math.random() * 12) + 1;
 
 	redNum = Math.floor(Math.random() * 12) + 1;
 };
@@ -41,14 +41,14 @@ function nextGame() {
 function checkingNum () {
 	if (playerCounter === computerNum[0]) {
 		wins++;
-		$("#outcome").html("You won!!");
+		$("#score").html("You won!!");
 		$("#wins").html("Wins: "+ wins);
 		nextGame();
 	}
 
 	else if (playerCounter > computerNum[0]) {
 		losses++;
-		$("#outcome").html("You lost!!");
+		$("#score").html("You lost!!");
 		$("#losses").html("Losses: " + losses);
 		nextGame();
 	}
@@ -65,21 +65,21 @@ $("#crystal-blue").on("click", function() {
 	checkingNum();
 });
 
-$("#crystal-teal").on("click", function() {
+$("#crystal-purple").on("click", function() {
 	playerCounter = purpleNum + playerCounter;
 	$("#player-count").text(playerCounter);
 	console.log(playerCounter);
 	checkingNum();
 });
 
-$("#crystal-clear").on("click", function() {
+$("#crystal-pink").on("click", function() {
 	playerCounter = pinkNum + playerCounter;
 	$("#player-count").text(playerCounter);
 	console.log(playerCounter);
 	checkingNum();
 });
 
-$("#crystal-green").on("click", function() {
+$("#crystal-red").on("click", function() {
 	playerCounter = redNum + playerCounter;
 	$("#player-count").text(playerCounter);
 	console.log(playerCounter);
