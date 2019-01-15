@@ -85,5 +85,3 @@ $("#crystal-red").on("click", function() {
 	console.log(playerCounter);
 	checkingNum();
 });
-
-});
